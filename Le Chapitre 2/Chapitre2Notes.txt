@@ -1,0 +1,154 @@
+﻿
+Pour Jouer Dévéloppement: http://it-ebooks.info/book/2998/ (jMonkeyEngine 3.0)
+						  http://it-ebooks.info/book/2698/ (unity 4 cookbook)
+						  http://it-ebooks.info/book/3146/ (Unity 2d Jeu dévéloppement)
+						  http://it-ebooks.info/book/2937/ (Unity 3d Jeu Dévéloppement)
+						  http://www.formation-facile.fr/cours-unity-tablettes.php
+
+Pour dévéloppement de Java: http://www.it-ebooks.info/book/644/
+http://programmers.stackexchange.com/questions/91629/best-java-book-you-have-read-so-far?lq=1
+
+Pour dévéloppement de Android: http://www.linux.com/learn/docs/683628-android-programming-for-beginners-part-1
+
+http://www.xda-developers.com/android/free-android-development-tutorials-on-linux-com/
+
+Aussi, obtené Head First Design Patterns!
+
+Comprendre le langue JavaScript
+Chapitre 2.2: 
+
+Summary de Cette Chapitre:
+	1. Tools pour debugging le code de JavaScript
+	2. Des Techniques pour générations des tests
+	3. Bâtiment un suite test
+	4. Comment tester operations asynchrones
+
+Tester, c'est très importante nous codage(n.m), puisque nous codage allons cross-browser développement(n.m) et plusiers développeurs faisant avec le codage même.
+
+Débogage (Débogager):
+
+Utilizer console.log() plutôt alert()
+
+Aussi, utlizier breakpoints dans votre codage, puis essayer le outil débogage.  
+
+Je devine(?) ce n'est pas trop difficile tous plus.
+
+***************************************************************
+
+Généeration de Test:
+
+	1. Repeatability (répétabilité) ou reproductible
+	2. Simplicité
+	3. Indépendance : execute tous par lui-même 
+
+Cas Test Déconstructive: Voir seule le trop important codage
+
+Cas Test Constructif: Construez le cas pour en le bas à en le haut. (Ràppeler le tour de Babel étant construit ou bâti).
+
+Un exemple mont Cas Test:
+#!/bin/sh
+# Check out a fresh copy of jQuery
+git clone git://github.com/jquery/jquery.git $1
+# Copy the dummy test case file in
+cp $2.html $1/index.html
+# Build a copy of the jQuery test suite
+cd $1 && make
+
+
+2.4.1: Le Assertion
+
+<html>
+	<head>
+		<title>Suite de Test</title>
+		<script>
+
+		function assert(value, desc) {
+			var li = document.createElement("li");
+			li.className = value ? "pas" : "fail";
+			li.appendChild(document.createTextNode(desc));
+			document.getElementById("results").appendChild(li);
+		}
+
+		window.onload = function() {
+			assert(true, "The test suite is running.");
+			assert(false, "False!");
+		};
+		</script>
+		<style>
+			#results li.pass { color: green; }
+			#results li.fail { color: red; }
+		</style>
+	</head>
+
+	<body>
+		<ul id="results"></ul>
+	</body>
+</html>
+
+
+2.4.2: Les Groupes D'Essai (tests)
+
+En haut puis est regroupés dans groupes d'essai (essai <-> testes) (Voyez Listing 2.5, la page.24)
+
+
+
+2.4.3: Essaiment Asynchronous
+
+
+
+
+
+Souvent, il été dit si on doué en maths, on doué en tout.
+
+Épuisant (adj.):
+
+Def: Qui mine les forces, la résistance ; éreintant, exténuant : Une 	marche épuisante. Des élèves épuisants.
+
+Synonymes:
+
+éproubant(adj.) -> Pénible à supporter, qui met à l'epreuve la résistance.
+
+accablant
+
+
+Chapitre 3: Fonctions dans JavaScript
+
+
+	Callbacks, cette très simple quand implementation dans JavaScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

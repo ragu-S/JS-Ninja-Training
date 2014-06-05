@@ -1,0 +1,49 @@
+// mon prémier suite teste
+<!doctype = html>
+	<head>
+		<title>Suite de Test</title>
+		<script>
+
+		function assert(value, desc) {
+			var li = document.createElement("li");
+			li.className = value ? "pas" : "fail";
+			li.appendChild(document.createTextNode(desc));
+			document.getElementById("results").appendChild(li);
+		}
+
+		window.onload = function() {
+			assert(true, "The test suite is running.");
+			assert(false, "False!");
+		};
+		</script>
+		<style>
+			#results li.pass { color: green; }
+			#results li.fail { color: red; }
+		</style>
+	</head>
+
+	<body>
+		<ul id="results"></ul>
+	</body>
+	<!--
+
+	J'avais beacoup des écheces, pourtant j'ai croire quelchose bon vein de acte.
+
+	preposition:
+	hors -> excepté, sauf
+
+	Aussi: Voyez ces sites Webs pour audio avec python ou C
+
+	http://www.dcs.gla.ac.uk/~jhw/gslib/ (fait par MIT en langue de C)
+
+	http://pymedia.org/tut/
+
+	https://wiki.python.org/moin/Audio/
+
+	https://code.google.com/p/pyo/ (cette site est très utile au sujet de la granulation)
+
+	http://pymedia.org/tut/src/recode_audio.py.html (un exemple monte en développement les formats des audio )
+	et aussi: http://pymedia.org/tut/recode_audio.html
+	-->
+</html>
+
