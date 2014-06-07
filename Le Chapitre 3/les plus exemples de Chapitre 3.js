@@ -124,7 +124,27 @@ function laSection3_6() {
 window.onload = function() {
 	//laSection3_3();
 	//laSection3_4();
-	laSection3_6();
+	//laSection3_6();
+	
 }
 
+//faireQuelqueChose2();
+// IMPORTANT: 
+console.log(typeof window.faireQuelqueChose1); // faireQuelqueChose1 n'est pas definé ici
+											   // Mais si la fonction est definé comme function faireQuelqueChose()
+											   // elle est immediament 
+var faireQuelqueChose1 = function() {
+	
+	quelqueChose();
+	function quelqueChose() {
+		this.faireQuelqueChose2 = function() {
+			//faireQuelqueChose1();
+			alert("Hein! ce fait quelque chose!");
+		}
+		console.dir(this.faireQuelqueChose2);
+	}
+	quelqueChose();
+}
 
+console.log(typeof window.faireQuelqueChose1); // faireQuelqueChose1 est definé ici
+console.log("vrai" || "faux"); // la experession retours vrai (pas une boolean true)
