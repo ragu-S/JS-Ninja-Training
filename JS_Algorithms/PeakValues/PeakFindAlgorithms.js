@@ -18,17 +18,18 @@ window.onload = function() {
         }
     }
     
+    
     //matrixTable = [41,24,3,1,33,47,14,80,19,37,97,62,31,75,60,51,68,37,46,45,97,58,88,27,68,32,85,35,51,82,79,35,25,72,49,54,9,3,75,26,53,63,39,81,48];
     //console.log(printMeArray(matrixTable));
     //console.log(printMe2D_Array(matrixTable));
     //console.dir(matrixTable);
     makeHtmlRow(matrixTable);
-    console.log(BinarySearch_2D_array(matrixTable));
+   // console.log(BinarySearch_2D_array(matrixTable));
 
     //var mid = Math.round(matrixTable.length/2);
     var peak = BinarySearch_2D_array(matrixTable);//findPeak(matrixTable);
     var firstPeak = [peak];
-    console.dir(firstPeak);
+    //console.dir(firstPeak);
     showPeak(firstPeak);
     //while(mid) {
     //mid = Math.round(matrixTable.length/2);
@@ -241,6 +242,7 @@ function BinarySearch_2D_array(array) {
         else if(col < maxCol && isRight(array, row, col)) {
             col++;
         }
+        // basically current node/cell is a peak, based on the definition of a peak
         else {
             return array[row][col];
         }
