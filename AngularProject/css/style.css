@@ -1,0 +1,29 @@
+/* main css */
+
+body {
+	font-family: Arial;
+	font-size: 12px;
+	margin: 0px;
+	background: #252525;
+}
+
+div {
+	margin: 0px;
+	padding: 0px;
+}
+
+div .page {
+	margin: 0px auto 0px;
+	max-width: 1200px;
+}
+
+.product {
+	width: 50%;
+	/*border: solid 3px purple;*/
+	background: white;
+	margin: 10px auto 10px auto;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+
