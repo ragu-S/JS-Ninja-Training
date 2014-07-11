@@ -19,11 +19,13 @@ div .page {
 
 .product {
 	width: 50%;
+	min-width: 380px;
 	/*border: solid 3px purple;*/
 	background: white;
 	margin: 10px auto 10px auto;
 	padding: 10px;
 	border-radius: 15px;
+	text-align: center;
 }
 
 

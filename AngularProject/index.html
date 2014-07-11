@@ -8,20 +8,32 @@
 		<script type="text/javascript" src="./js/app.js"></script>
 	</head>
 	<body ng-controller="storeController as store">
-		<div class="page"
+		<div class="page">
 			<!-- ng-show="!store.product.soldOut" awkward way of writing this functionality, using ng-hide instead -->
-			<div class="product" ng-repeat="product in store.products">
+			<!-- <div class="product" ng-repeat="product in store.products">
 				<div ng-hide="product.soldOut">
 					<h1>{{product.name}}</h1>
 					<h2>${{product.price}}</h2>
 					<p>{{product.description}}</p>
 					<button ng-show="product.canPurchase"> Add to Cart </button>
 				</div>
-			</div>
+			</div> -->
 		</div>
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="product in store.products | limitTo:5">
+				<h3>
+					{{product.name | uppercase}}
+					<em class="pull-right">{{product.price | currency}}</em> <!-- this is a pipe call (using a fliter)
+																				date | filter:options
+																				{{'138812234235' | date:'MM/dd/yyyy @ h:mma'}} = 12/27/2013 @ 12:50am
+																				-->
+					<br/>															
+					<em class="pull-left">{{product.datePurchased() | date:'MM/dd/yyyy @ h:mma'}}</em> 	
+				</h3>
+			</li>
+		</ul>
 	</body>
 </html>
-
 
 <!-- 
 Modules
