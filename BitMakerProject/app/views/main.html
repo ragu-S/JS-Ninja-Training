@@ -1,0 +1,26 @@
+<div ng-controller="MainCtrl">
+  <br />
+  <p>Main Controller</p>
+  <hr />
+  <table class="calculator">
+    <tr>
+      <td><input type="text" size="40" name="calculatorDisplay"/></td><td><button>Enter</button></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+
+  <data-cool-directive>
+  </data-cool-directive>
+  <div ng-repeat="button in buttons">
+  <data-calculator-Button>
+  </data-calculator-Button>
+  </div>
+  <!-- <flight ng-repeat="flight in model.flights" select="book(name)" name="{{flight.name}}" flight="flight"></flight> -->
+  <!-- 3 ways of adding html with behaviour
+  <calculatorButton></calculatorButton>
+  <div calculatorButton></div>
+  <div class="calculatorButton"></div>
+  -->
+</div>

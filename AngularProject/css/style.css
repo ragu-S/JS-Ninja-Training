@@ -17,15 +17,28 @@ div .page {
 	max-width: 1200px;
 }
 
-.product {
+/*.product {
 	width: 50%;
 	min-width: 380px;
-	/*border: solid 3px purple;*/
+	border: solid 3px purple;
 	background: white;
 	margin: 10px auto 10px auto;
 	padding: 10px;
 	border-radius: 15px;
 	text-align: center;
+}*/
+
+.spacing {
+	margin: 0px 10px 25px 10px; /* top right bot left */	
+	border-radius: 10px;
 }
 
+li.list-group-item:first-child {
+	margin-top: 20px;
+	border-radius: 10px;
+} 
 
+li.list-group-item:last-child {
+	margin-top: 20px;
+	border-radius: 10px;
+} 

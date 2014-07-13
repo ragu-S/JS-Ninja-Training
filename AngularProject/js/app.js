@@ -65,6 +65,21 @@
 		}
 	}
 
+	/*************************************************************************/
+	// Image
+	var theImage = new Image();
+	theImage.src = "../images/jewels.jpg";
+	var canvas = document.createElement("canvas");
+	canvas.getContext('2d');
+	//getElementById("jewel");
+	canvas.width = 1000;
+	canvas.height = 1000;
+	var sourceX = 0;
+	var sourceY = 0;
+	console.log(canvas);
+	canvas.drawImage(theImage, 0, 0, 800, 816, 0, 0, 100, 100);
+	//document.body.appendChild(canvas);
+	/*************************************************************************/
 	var app = angular.module('app', []); // make sure app name is not used elsewhere as local variable
 						// app name	// where dependencies go
 	app.controller('storeController', function() {

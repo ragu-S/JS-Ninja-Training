@@ -20,16 +20,16 @@
 			</div> -->
 		</div>
 		<ul class="list-group">
-			<li class="list-group-item" ng-repeat="product in store.products | limitTo:5">
-				<h3>
-					{{product.name | uppercase}}
-					<em class="pull-right">{{product.price | currency}}</em> <!-- this is a pipe call (using a fliter)
-																				date | filter:options
-																				{{'138812234235' | date:'MM/dd/yyyy @ h:mma'}} = 12/27/2013 @ 12:50am
-																				-->
-					<br/>															
-					<em class="pull-left">{{product.datePurchased() | date:'MM/dd/yyyy @ h:mma'}}</em> 	
-				</h3>
+			<li class="list-group-item spacing" ng-repeat="product in store.products | limitTo:5">
+				<h3>{{product.name | uppercase}}</h3>
+				<em class="pull-right">{{product.price() | currency}}</em> <!-- this is a pipe call (using a fliter)
+																			date | filter:options
+																			{{'138812234235' | date:'MM/dd/yyyy @ h:mma'}} = 12/27/2013 @ 12:50am
+																			-->
+				<br/>
+				<!-- <br/> -->															
+				<em class="pull-left">{{product.datePurchased() | date:'MM/dd/yyyy @ h:mma'}}</em> 
+				<br/>
 			</li>
 		</ul>
 	</body>
