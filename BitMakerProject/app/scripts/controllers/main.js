@@ -16,30 +16,32 @@ app.controller('testy', function(){
 
 app.directive('coolDirective', [function() {
 	return {
+		template: '<div class="alert alert-success">This is done</div>',
 		restrict: 'E',
 		link: function(scope, element) {
 			element.bind('mouseover', function() {
 				console.log(element);
 			});
-		},
-		template: '<div class="alert alert-success">This is done</div>'
+		}
 	};
 }]);
 
 app.directive('calculatorButton', function() {
 	return {
-		template: '<button>{{symbol}}</button>',
+		template: '<button>{{buttonLabel}}</button>',
 		restrict: 'E',
 		scope: {
-			symbol: '@'
+			buttonLabel: '@'
 		},
 		link: function postLink(scope, element) {
-			var action = element.find('button');
-			action.bind('click', function() {
-				scope.action({
-					buttonId: scope.buttonLabel
-				});
-			});
+			// var action = element.find('button');
+			// action.bind('click', function() {
+			// 	alert(scope.buttonLabel);
+			// 	// scope.action({
+			// 	// 	buttonId: scope.buttonLabel
+			// 	// });
+			// });
+			
 		}
 	};
 });

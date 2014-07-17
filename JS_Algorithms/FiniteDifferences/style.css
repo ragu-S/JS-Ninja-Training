@@ -1,0 +1,56 @@
+/* Style sheet for Finite Differences */
+
+#lePage {
+	/*margin: 0px auto 0px auto; */ /* top left bottom right */
+	min-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30%;
+	padding-right: 30%;
+	/*background-color: black;*/
+}
+
+th, td {
+	border: solid 2px;
+	border-collapse: collapse;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+
+td {
+	border: solid 1px;
+}
+
+header {
+
+}
+
+div .content {
+	/*margin: 0px auto 0px auto;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	border: solid 2px;
+	border-collapse: collapse;
+}
+
+#functionValues tr:first-child {
+	background-color: #F5DEB3;
+}
+
+#functionValues tr {
+	background-color: #E6E6FA;
+}
+
+#functionValues tr td:last-child {
+	border-left: 2px;
+	background-color: #FFA07A;
+}
+
+/*#functionValues tr.differences td: {
+	
+}
+*/
